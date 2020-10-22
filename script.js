@@ -10,23 +10,16 @@ const generateTarget = () => {
 
 const compareGuesses = (humanGuess, computerGuess, secretNumber) => {
 
-  if ((humanGuess - secretNumber) >= (computerGuess - secretNumber)) {
-    return true; 
-  } else if ((humanGuess - secretNumber) < compareGuesses - secretNumber) {
+  if ((secretNumber - humanGuess) <= (secretNumber - computerGuess)) {
+    return true;
+  } else if ((secretNumber - humanGuess) > (secretNumber - computerGuess)) {
     return false;
   } else {
     return 'Invalid';
   }
-  
+
 };
 
-
-
-console.log(compareGuesses(2, 2, 2));
-console.log(compareGuesses(1, 8, 2));
-console.log(compareGuesses(1, 8, 8));
-
-
-
-
-//logic: If secrert number is larger than guess 1 then takeaway otherwise just takeway 
+const updateScore = () => {
+  
+}
