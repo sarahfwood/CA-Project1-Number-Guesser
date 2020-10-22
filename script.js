@@ -9,27 +9,15 @@ const generateTarget = () => {
 };
 
 const compareGuesses = (humanGuess, computerGuess, secretNumber) => {
-  if (secretNumber > humanGuess) {
-    humanGuess - secretNumber;
-  } else {
-    secretNumber - humanGuess;
-  }
-
-  if (secretNumber > computerGuess) {
-    computerGuess - secretNumber;
-  } else {
-    secretNumber - computerGuess;
-  }
-
-
 
   if ((humanGuess - secretNumber) >= (computerGuess - secretNumber)) {
-    return true;
+    return true; 
   } else if ((humanGuess - secretNumber) < compareGuesses - secretNumber) {
     return false;
   } else {
     return 'Invalid';
   }
+  
 };
 
 
