@@ -20,6 +20,10 @@ const compareGuesses = (humanGuess, computerGuess, secretNumber) => {
 
 };
 
-const updateScore = () => {
-  
-}
+const updateScore = (score) => {
+  if (score === 'human') {
+    humanScore++;
+  } else {
+    computerScore++;
+  }
+};
