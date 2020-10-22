@@ -8,17 +8,18 @@ const generateTarget = () => {
   return Math.floor((Math.random() * 10));
 };
 
-console.log(generateTarget());
-
 const compareGuesses = (humanGuess, computerGuess, secretNumber) => {
   if (secretNumber > humanGuess) {
-    let guessOne = humanGuess - secretNumber;
-    console.log(guessOne);
+    humanGuess - secretNumber;
   } else {
     secretNumber - humanGuess;
   }
 
-
+  if (secretNumber > computerGuess) {
+    computerGuess - secretNumber;
+  } else {
+    secretNumber - computerGuess;
+  }
 
 
 
