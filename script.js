@@ -27,3 +27,7 @@ const updateScore = (score) => {
     computerScore++;
   }
 };
+
+const advancedRound = () => {
+  
+}
