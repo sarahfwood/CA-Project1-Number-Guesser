@@ -28,6 +28,6 @@ const updateScore = (score) => {
   }
 };
 
-const advancedRound = () => {
+const advanceRound = () => {
   currentRoundNumber++;
 };
