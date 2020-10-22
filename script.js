@@ -29,5 +29,5 @@ const updateScore = (score) => {
 };
 
 const advancedRound = () => {
-  
-}
+  currentRoundNumber++;
+};
