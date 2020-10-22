@@ -9,3 +9,13 @@ const generateTarget = () => {
 };
 
 console.log(generateTarget());
+
+const compareGuesses = (humanGuess, computerGuess, secretNumber) => {
+  if ((humanGuess - secretNumber) <= (computerGuess - secretNumber)) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(compareGuesses(2, 8, 3));
